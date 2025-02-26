@@ -1,0 +1,6 @@
+<h1>Task Manager</h1>
+<app-task-form
+  [selectedTask]="selectedTask"
+  (taskUpdated)="refreshTaskList()"
+></app-task-form>
+<app-task-list (editRequested)="onEditRequest($event)"></app-task-list>

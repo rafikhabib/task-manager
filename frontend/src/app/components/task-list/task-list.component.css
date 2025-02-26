@@ -1,0 +1,40 @@
+.task-list {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #151515;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f36100;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-item span {
+    flex: 1;
+    padding: 5px;
+    color: white;
+  }
+  
+  .task-item button {
+    background: #f36100;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-item button:hover {
+    background: #d15000;
+  }
+  
