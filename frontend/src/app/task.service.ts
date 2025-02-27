@@ -14,8 +14,9 @@ export interface Task {
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'http://backend:8082/tasks';
-
+  //private apiUrl = 'http://backend:8082/tasks';
+  private apiUrl = 'http://localhost:8082/tasks';
+  
   constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
