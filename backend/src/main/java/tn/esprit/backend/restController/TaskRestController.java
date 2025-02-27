@@ -9,7 +9,8 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@CrossOrigin(origins = {"http://localhost:4200", "http://frontend"})
+//@CrossOrigin(origins = {"http://localhost:4200", "http://frontend",http://localhost:80"})
+@CrossOrigin(origins = "*")
 public class TaskRestController {
     IService service;
     @GetMapping("/tasks")
